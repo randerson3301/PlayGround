@@ -35,6 +35,8 @@ namespace MediatRSample.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(AddPersonCommand command)
         {
+            //o metodo Send será o responsavel por executar uma tarefa que irá chamar o Handler
+            //desse comando e irá retornar a resposta do método Handle
             var response = await _mediator.Send(command);
             return Ok(response);
         }
