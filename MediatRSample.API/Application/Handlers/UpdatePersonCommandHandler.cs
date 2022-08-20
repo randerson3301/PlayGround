@@ -15,8 +15,8 @@ namespace MediatRSample.API.Application.Handlers
 
         public UpdatePersonCommandHandler(IMediator mediator, IRepository<Person> repository)
         {
-            mediator = _mediator;
-            repository = _repository;
+            _mediator = mediator;
+            _repository = repository;
         }
 
         //O método Handle será o responsável por de fato tentar atualizar uma pessoa no sistema.
@@ -25,12 +25,12 @@ namespace MediatRSample.API.Application.Handlers
         {
             //Antes de chamar efetivamente o método Update, o Handler irá 'converter' o parametro request
             // que é do tipo UpdatePersonCommand em uma entidade Person convencional
-            var person = new Person 
-            { 
-              Id = request.Id, 
-              Name = request.Name, 
-              Age = request.Age, 
-              Gender = request.Gender 
+            var person = new Person
+            {
+                Id = request.Id,
+                Name = request.Name,
+                Age = request.Age,
+                Gender = request.Gender
             };
 
             try
@@ -49,10 +49,10 @@ namespace MediatRSample.API.Application.Handlers
             {
 
                 await _mediator.Publish(new UpdatedPersonNotification { Id = person.Id, Name = person.Name, Age = person.Age, Gender = person.Gender, IsFinished = false });
-                
+
                 //caso alguma exceção ocorra no sistema o mediator irá publicar uma notificação para o Erro
                 await _mediator.Publish(new ErroNotification { Exception = ex.Message, StackTrace = ex.StackTrace });
-                
+
                 return await Task.FromResult("Houve um erro na atualização!");
             }
         }

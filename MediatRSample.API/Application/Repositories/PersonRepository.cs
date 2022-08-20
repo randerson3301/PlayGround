@@ -5,10 +5,11 @@ namespace MediatRSample.API.Application.Repositories
 {
     public class PersonRepository : IRepository<Person>
     {
-        private static Dictionary<int, Person> people = new Dictionary<int, Person>();
+        private Dictionary<int, Person> people = new Dictionary<int, Person>();
 
         public async Task Add(Person entity)
         {
+            entity.Id = people.Count + 1;   
             await Task.Run(() => people.Add(entity.Id, entity));
         }
 

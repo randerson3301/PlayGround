@@ -15,8 +15,8 @@ namespace MediatRSample.API.Application.Handlers
 
         public DeletePersonCommandHandler(IMediator mediator, IRepository<Person> repository)
         {
-            mediator = _mediator;
-            repository = _repository;
+            _mediator = mediator;
+            _repository = repository;
         }
 
         //O método Handle será o responsável por de fato tentar excluir uma pessoa do sistema.
