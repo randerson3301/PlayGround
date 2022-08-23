@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MediatR", "MediatR", "{7B66
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatRSample.API", "MediatRSample.API\MediatRSample.API.csproj", "{742BF67C-16E5-48F6-A682-198CA0C78581}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatRStream.API", "MediatRStream.API\MediatRStream.API.csproj", "{6811A9AB-6A8D-4BF5-9482-92BDC6D46AF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,12 +31,17 @@ Global
 		{742BF67C-16E5-48F6-A682-198CA0C78581}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{742BF67C-16E5-48F6-A682-198CA0C78581}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{742BF67C-16E5-48F6-A682-198CA0C78581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6811A9AB-6A8D-4BF5-9482-92BDC6D46AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6811A9AB-6A8D-4BF5-9482-92BDC6D46AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6811A9AB-6A8D-4BF5-9482-92BDC6D46AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6811A9AB-6A8D-4BF5-9482-92BDC6D46AF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{742BF67C-16E5-48F6-A682-198CA0C78581} = {7B66873E-B13A-4C89-BFE0-C21205B19A23}
+		{6811A9AB-6A8D-4BF5-9482-92BDC6D46AF7} = {7B66873E-B13A-4C89-BFE0-C21205B19A23}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B8F0E134-090D-4F63-82BB-5B88C168E9FD}
