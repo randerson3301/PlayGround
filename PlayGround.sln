@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatRStream.API", "Mediat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStoreApiWithMongoDb", "BookStoreApiWithMongoDb\BookStoreApiWithMongoDb.csproj", "{2759C84F-4F8A-4130-8A07-943C8FE596E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchmarkDotNetExample", "BenchmarkDotNetExample\BenchmarkDotNetExample.csproj", "{B773D7FA-5EBA-4B64-B0A0-E4664189A49F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchmarkDotNetExample", "BenchmarkDotNetExample\BenchmarkDotNetExample.csproj", "{B773D7FA-5EBA-4B64-B0A0-E4664189A49F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRChat", "SignalRChat\SignalRChat.csproj", "{15D84ECE-6611-44AE-B7C0-E0BD266E1C6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{B773D7FA-5EBA-4B64-B0A0-E4664189A49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B773D7FA-5EBA-4B64-B0A0-E4664189A49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B773D7FA-5EBA-4B64-B0A0-E4664189A49F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15D84ECE-6611-44AE-B7C0-E0BD266E1C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15D84ECE-6611-44AE-B7C0-E0BD266E1C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15D84ECE-6611-44AE-B7C0-E0BD266E1C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15D84ECE-6611-44AE-B7C0-E0BD266E1C6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
